@@ -1,5 +1,6 @@
 package com.example.criminalintent
 
+
 import android.os.Bundle
 //import android.support.v4.app.Fragment
 import android.text.Editable
@@ -36,8 +37,12 @@ class CrimeFragment: Fragment() {
         dateButton.apply { text = crime.data.toString()
                           isEnabled = false}
 
+
+
         return view
     }
+
+
 
     override fun onStart() {
         super.onStart()
@@ -52,9 +57,9 @@ class CrimeFragment: Fragment() {
             }
             override fun onTextChanged(
                 sequence: CharSequence?,
-            start: Int,
-            before: Int,
-            count: Int
+                start: Int,
+                before: Int,
+                count: Int
             ) {
                 crime.title = sequence.toString()
             }
