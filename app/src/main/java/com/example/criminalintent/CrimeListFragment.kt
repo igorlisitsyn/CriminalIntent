@@ -42,8 +42,9 @@ class CrimeListFragment : Fragment() {
 
     private fun updateUI() {
         val crimes = crimeListViewModel.crimes
-        adapter = CrimeAdapter(crimes)
-        crimeRecyclerView.adapter = adapter
+        //adapter = CrimeAdapter(crimes)
+       // crimeRecyclerView.adapter = adapter
+        crimeRecyclerView.adapter = CrimeAdapter(crimes)
 
 
     }
