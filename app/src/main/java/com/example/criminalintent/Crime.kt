@@ -1,11 +1,14 @@
 package com.example.criminalintent
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 import java.util.*
 
+@Entity
 data class Crime (
-    val id: UUID = UUID.randomUUID(),
-    var title: String = "",
-    var data: Date = Date(),
-    var isSolved: Boolean = false
+        @PrimaryKey val id: UUID = UUID.randomUUID(),
+        var title: String = "",
+        var data: Date = Date(),
+        var isSolved: Boolean = false
     
 )
